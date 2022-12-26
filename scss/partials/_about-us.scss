@@ -1,0 +1,39 @@
+@use "../var/colors" as *;
+@use "../var/mixins" as *;
+
+.about-us{
+    padding: 170px 0 57px;
+    background-color: $base;
+
+    .about-us-wrapper{
+        display: flex;
+        justify-content: space-between;
+
+        img{
+            width: 727px;
+            height: 581px;
+        }
+
+        .about-us-text-info{
+            margin: auto 0;
+            color: $white;
+            width: 480px;
+
+            h4{
+                color: $blue;
+                font-size: 40px;
+                font-weight: 700;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+    
+            p{
+                font-weight: 500;
+            }
+
+            p:not(:last-child){
+                margin-bottom: 34px;
+            }
+        }
+    }
+}

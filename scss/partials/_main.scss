@@ -1,0 +1,20 @@
+@use "../var/colors" as *;
+@use "../var/mixins" as *;
+
+.main-section{
+    background-color: $base;
+    padding: 105px 0 193px;
+    color: $white;
+    
+    h1{
+        font-size: 91px;
+        font-weight: 700;
+        width: 848px;
+        margin-bottom: 28px;
+    }
+
+    p{
+        font-weight: 500;
+        font-size: 21px;
+    }
+}

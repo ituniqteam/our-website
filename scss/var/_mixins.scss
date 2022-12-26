@@ -1,0 +1,41 @@
+@mixin xl {
+	@media screen and (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin lg {
+	@media screen and (max-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin md {
+	@media screen and (max-width: 840px) {
+		@content;
+	}
+}
+
+@mixin lm{
+    @media screen and (max-width:700px) {
+        @content
+    }
+}
+
+@mixin sm {
+	@media screen and (max-width: 640px) {
+		@content;
+	}
+}
+
+@mixin xsm {
+	@media screen and (max-width: 480px) {
+		@content;
+	}
+}
+
+@mixin hover {
+	@media (hover: hover) and (pointer: fine) {
+		@content;
+	}
+}

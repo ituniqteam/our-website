@@ -1,0 +1,32 @@
+@use "../var/colors" as *;
+@use "../var/mixins" as *;
+
+.footer{
+    padding: 117px 0 84px;
+    background-color: #000;
+    text-align: center;
+    color: $white;
+
+    .footer-adress{
+        margin-bottom: 33px;
+    }
+
+    .footer-phone{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 41px;
+    
+        a{
+            padding-left: 42px;
+            background: url("../images/ph_phone.svg");
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding: 2px 0 2px 42px;
+        }
+    }
+
+    .footer-icons a:not(:last-child){
+        margin-right: 16px;
+    }
+}
+

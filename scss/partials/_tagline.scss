@@ -1,0 +1,21 @@
+@use "../var/colors" as *;
+@use "../var/mixins" as *;
+
+.tagline{
+    padding: 92px 0;
+    text-align: center;
+
+    .tagline-wrapper{
+        width: 1106px;
+        margin: 0 auto;
+
+        h2{
+            font-size: 48px;
+            font-weight: 700;
+            
+            span{
+                color: $blue;
+            }
+        }
+    }
+}

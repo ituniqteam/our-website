@@ -1,0 +1,81 @@
+@use "../var/colors" as *;
+@use "../var/mixins" as *;
+
+.contact-us{
+    padding: 92px 0 189px;
+    background-color: $base;
+
+    h3{
+        font-size: 52px;
+        font-weight: 700;
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .contact-us-form-inner-wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 176px;
+
+        .contact-us-user-info div:not(:last-child){
+            margin-bottom: 44px;
+        }
+    
+        .contact-us-user-info{
+            input{
+                background-color: transparent;
+                color: $white;
+                border: 1px solid $white;
+                border-radius: 18px;
+                font-size: 18px;
+                padding: 16px 13px;
+                width: 580px;
+            }
+        }
+
+        .contact-us-user-project{
+            display: flex;
+
+            textarea{
+                height: 100%;
+                width: 550px;
+                background-color: transparent;
+                border: 1px solid $white;
+                border-radius: 18px;
+                resize: none;
+                padding: 16px 21px;
+                color: $white;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .contact-us-icons{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 42px;
+
+        a:not(:last-child){
+            margin-right: 52px;
+        }
+    }
+
+    .contact-us-phone{
+        display: flex;
+        justify-content: center;
+
+        a{
+            padding-left: 42px;
+            background: url("../images/ph_phone.svg");
+            background-repeat: no-repeat;
+            background-position: left center;
+            color: $white;
+            padding: 2px 0 2px 42px;
+            font-size: 18px;
+        }
+    }
+    
+    
+}
