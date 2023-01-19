@@ -2,31 +2,163 @@
 @use "../var/mixins" as *;
 
 .footer{
-    padding: 117px 0 84px;
+    padding: 153px 0 100px;
     background-color: #000;
-    text-align: center;
     color: $white;
+    position: relative;
+    background-image: url('../images/EnvelopeOpen.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
 
-    .footer-adress{
-        margin-bottom: 33px;
+    @include md{
+        background-image: none;
     }
 
-    .footer-phone{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 41px;
-    
-        a{
-            padding-left: 42px;
-            background: url("../images/ph_phone.svg");
-            background-repeat: no-repeat;
-            background-position: left center;
-            padding: 2px 0 2px 42px;
+    @include lm{
+        padding: 100px 0 50px;
+    }
+
+    .footer-logo{
+        position: absolute;
+        top: 30px;
+        left: 120px;
+        width: 206px;
+        height: 55px;
+        z-index: 3;
+        background-color: #000;
+        padding: 0 20px;
+
+        @include lm{
+            width: 120px;
+            height: 27px;
+            left: 0;
         }
     }
 
-    .footer-icons a:not(:last-child){
-        margin-right: 16px;
+    .footer-line{
+        position: absolute;
+        top: 58px;
+        width: 100%;
+        background-color: $blue;
+        height: 3px;
+
+        @include lm{
+            display: none;
+        }
+    }
+
+    .footer-wrapper{
+        display: flex;
+
+        .footer-boxes{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 650px;
+    
+            .footer-box{
+                width: 50%;
+                margin-bottom: 38px;
+    
+                h5{
+                    font-weight: 600;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+
+                    @include lm{
+                        font-size: 12px;
+                    }
+
+                    @include sm{
+                        font-size: 7px;
+                    }
+                }
+    
+                a, p{
+                    display: block;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #B2B4B2;
+
+                    @include lm{
+                        font-size: 11px;
+                    }
+
+                    @include sm{
+                        font-size: 6px;
+                    }
+                }
+    
+                .footer-phone{
+                    padding: 3px 0 2px 28px;
+                    background-image: url('../../images/ph_phone.svg');
+                    background-repeat: no-repeat;
+                    background-size: 23px 23px;
+
+                    @include lm{
+                        background-size: 16px 16px;
+                    }
+
+                    @include sm{
+                        background-size: 10px 10px;
+                        padding: 3px 0 2px 12px;
+                    }
+                }
+            }
+        }
+
+        .footer-text-us{
+            margin-bottom: 50px;
+
+            @include lm{
+                margin-bottom: 25px;
+            }
+
+            h5{
+                font-weight: 600;
+                font-size: 16px;
+                margin-bottom: 5px;
+
+                @include lm{
+                    font-size: 12px;
+                }
+
+                @include sm{
+                    font-size: 7px;
+                }
+            }
+
+            a{
+                font-weight: 700;
+                font-size: 26px;
+                border-bottom: 2px solid $blue;
+
+                @include lm{
+                    font-size: 18px;
+                }
+
+                @include sm{
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .footer-icons{
+            display: flex;
+
+            a:not(:last-child){
+                margin-right: 16px;
+
+                @include sm{
+                    margin-right: 5px;
+                }
+            }
+
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
     }
 }
 

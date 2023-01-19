@@ -2,80 +2,76 @@
 @use "../var/mixins" as *;
 
 .contact-us{
-    padding: 92px 0 189px;
+    padding: 70px 0 93px;
     background-color: $base;
+    color: $white;
 
     h3{
-        font-size: 52px;
+        color: $yellow;
         font-weight: 700;
-        color: $white;
+        font-size: 56px;
         text-transform: uppercase;
         text-align: center;
-        margin-bottom: 100px;
+        margin-bottom: 73px;
     }
 
-    .contact-us-form-inner-wrapper{
+    .contact-us-boxes{
         display: flex;
-        justify-content: space-between;
-        margin-bottom: 176px;
+        text-align: center;
+        margin-bottom: 105px;
 
-        .contact-us-user-info div:not(:last-child){
-            margin-bottom: 44px;
-        }
+        .contact-us-box{
+            width: 20%;
+            padding: 10px;
+
+            img{
+                margin-bottom: 15px;
+                height: 50px;
+                width: auto;
+            }
+
+            h5{
+                text-transform: uppercase;
+                color: $green;
+                font-weight: 700;
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
     
-        .contact-us-user-info{
-            input{
-                background-color: transparent;
-                color: $white;
-                border: 1px solid $white;
-                border-radius: 18px;
-                font-size: 18px;
-                padding: 16px 13px;
-                width: 580px;
+            p{
+                font-weight: 500;
+                font-size: 15px;
             }
         }
+    }
 
-        .contact-us-user-project{
-            display: flex;
+    button{
+        color: $white;
+        font-weight: 500;
+        font-size: 19px;
+        padding: 12px 82px;
+        border: 1px solid $blue;
+        border-radius: 20px;
+        display: flex;
+        margin: 0 auto 102px;
+    }
 
-            textarea{
-                height: 100%;
-                width: 550px;
-                background-color: transparent;
-                border: 1px solid $white;
-                border-radius: 18px;
-                resize: none;
-                padding: 16px 21px;
-                color: $white;
-                font-size: 18px;
-            }
-        }
+    button:hover{
+        background-color: $blue;
+        transition: 0.2s ease-in-out;
     }
 
     .contact-us-icons{
         display: flex;
         justify-content: center;
-        margin-bottom: 42px;
 
-        a:not(:last-child){
-            margin-right: 52px;
+        img{
+            width: 46px;
+            height: 46px;
+        }
+
+        a:not(:last-child){ 
+            margin-right: 25px;
         }
     }
-
-    .contact-us-phone{
-        display: flex;
-        justify-content: center;
-
-        a{
-            padding-left: 42px;
-            background: url("../images/ph_phone.svg");
-            background-repeat: no-repeat;
-            background-position: left center;
-            color: $white;
-            padding: 2px 0 2px 42px;
-            font-size: 18px;
-        }
-    }
-    
-    
 }

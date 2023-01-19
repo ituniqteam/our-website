@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -5,9 +9,9 @@ body{
     color: #171717;
     background: #fff;
 }
-    
+
 .container{
-    max-width: 1320px;
+    max-width: 1350px;
     margin: 0 auto;
     padding: 0 20px;
 }

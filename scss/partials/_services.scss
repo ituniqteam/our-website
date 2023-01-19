@@ -1,0 +1,168 @@
+@use "../var/colors" as *;
+@use "../var/mixins" as *;
+
+.services{
+    padding: 36px 0;
+    background-color: $base;
+
+    h3{
+        text-transform: uppercase;
+        color: $yellow;
+        font-weight: 700;
+        font-size: 56px;
+        text-align: center;
+        margin-bottom: 100px;
+
+
+        @include md{
+            font-size: 40px;
+        }
+
+        @include lm{
+            margin-bottom: 60px;
+        }
+
+        @include sm{
+            font-size: 26px;
+        }
+    }
+
+    .services-cards{
+        display: flex;
+        flex-direction: column;
+        
+        .services-card{
+            padding: 50px 20px;
+            margin: 0 auto;
+            width: 69%;
+            background-color: $dark-blue;
+            color: #fff;
+            border-radius: 40px;
+            display: flex;
+            flex-direction: column;
+
+            @include sm{
+                width: 100%;
+            }
+
+            .green{
+                color: $green;
+            }
+
+            .yellow{
+                color: $yellow;
+            }
+
+            .blue{
+                color: $light-blue;
+            }
+
+            h4{
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 34px;
+                text-align: center;
+
+                @include md{
+                    font-size: 28px;
+                }
+
+                @include lm{
+                    font-size: 18px;
+                }
+
+                @include xsm{
+                    font-size: 12px;
+                }
+            }
+
+            img{
+                margin: auto;
+                margin-bottom: 45px;
+
+                @include xsm{
+                    margin-bottom: 20px;
+                }
+            }
+
+            .frontend-img{
+                @include md{
+                    width: 315px;
+                    height: 246px;
+                }
+
+                @include lm{
+                    width: 175px;
+                    height: 136px;
+                }
+
+                @include xsm{
+                    width: 97px;
+                    height: 75px;
+                }
+            }
+
+            .backend-img{
+                @include md{
+                    width: 163px;
+                    height: 163px;
+                }
+
+                @include lm{
+                    width: 90px;
+                    height: 90px;
+                }
+
+                @include xsm{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            .design-img{
+                @include md{
+                    width: 181px;
+                    height: 193px;
+                }
+
+                @include lm{
+                    width: 100px;
+                    height: 107px;
+                }
+
+                @include xsm{
+                    width: 58px;
+                    height: 62px;
+                }
+            }
+
+            p{
+                font-weight: 700;
+                font-size: 28px;
+                text-align: center;
+
+                @include md{
+                    font-size: 20px;
+                }
+
+                @include lm{
+                    font-size: 16px;
+                }
+
+                @include xsm{
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .services-card:not(:last-child){
+            margin-bottom: 70px;
+
+            @include lm{
+                margin-bottom: 35px;
+            }
+        }
+    }
+
+    
+}

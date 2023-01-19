@@ -5,12 +5,39 @@
     padding: 92px 0;
     text-align: center;
 
+    @include sm{
+        padding: 46px 0;
+    }
+
+    @include xsm{
+        padding: 23px 0;
+    }
+
     .tagline-wrapper{
         width: 1106px;
         margin: 0 auto;
+        font-size: 48px;
+
+        @include xl{
+            width: 800px;
+        }
+        
+        @include lg{
+            width: 500px;
+            font-size: 38px;
+        }
+
+        @include sm{
+            width: 420px;
+            font-size: 23px;
+        }
+
+        @include xsm{
+            width: 80%;
+            font-size: 17px;
+        }
 
         h2{
-            font-size: 48px;
             font-weight: 700;
             
             span{

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unique</title>
+    <title>IT Unique</title>
     <!-- Montserrat and Inter fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,39 +13,51 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header-row">
-                <div class="header-logo">
-                    <a href="#"><img src="images/SET YOUNG TEAM.png" alt=""></a>
-                </div>
-                <ul class="header-links">
-                    <a href="">
-                        <li>about us</li>
-                    </a>
-                    <a href="">
-                        <li>our team</li>
-                    </a>
-                    <a href="">
-                        <li>portfolio</li>
-                    </a>
-                    <a href="">
-                        <li>services</li>
-                    </a>
-                    <a href="">
-                        <li>contacts</li>
-                    </a>
-                </ul>
+    <main class="main">
+        <div class="hero-block-wrapper">
+            <div class="background">
+                <header class="header">
+                    <div class="container">
+                        <div class="header-row">
+                            <div class="header-logo">
+                                <a href="#"><img src="images/IT-UNIQUE.png" alt=""></a>
+                            </div>
+                            <div class="menu">
+                                <ul class="header-links">
+                                    <a href="#about-us-anchor">
+                                        <li>About us</li>
+                                    </a>
+                                    <a href="#our-team-anchor">
+                                        <li>Our team</li>
+                                    </a>
+                                    <a href="#portfolio-anchor">
+                                        <li>Portfolio</li>
+                                    </a>
+                                    <a href="#services-anchor">
+                                        <li>Services</li>
+                                    </a>
+                                    <a href="#contact-us-anchor">
+                                        <li>Contacts</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="menu-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <section class="main-section">
+                    <div class="container">
+                        <h1>Backend Solutions for Business Growth</h1>
+                        <p>Grow Your Business with Robust Backend Created by the ITUnique Team</p>
+                        <button id="open-modal1">Get Started</button>
+                    </div>
+                </section>
             </div>
         </div>
-    </header>
-    <main class="main">
-        <section class="main-section">
-            <div class="container">
-                <h1>Backend Solutions for Business Growth</h1>
-                <p>Grow Your Business with Robust Backend Created by the Set Young Team</p>
-            </div>
-        </section>
         <section class="tagline">
             <div class="container">
                 <div class="tagline-wrapper">
@@ -55,19 +67,35 @@
                 </div>
             </div>
         </section>
-        <section class="about-us">
+        <section class="about-us" id="about-us-anchor">
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
             <div class="container">
                 <div class="about-us-wrapper">
-                    <img src="images/Rectangle 7.png" alt="">
+                    <img class="about-us-big-display-pic" src="images/Group 28 (1).png" alt="">
+                    <img class="about-us-small-display-pic" src="images/Group 30.jpg" alt="">
                     <div class="about-us-text-info">
-                        <h4>ABOUT IT-UNIQUE</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book..</p>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book..</p>
+                        <h4>ABOUT ITUNIQUE</h4>
+                        <p>IT Unique's mission is to automate
+                            and optimize our clients' business
+                            processes for efficient growth and
+                            scaling. IT Unique's mission is to automate
+                            and optimize our clients' business
+                            processes for efficient growth and
+                            scaling. </p>
+                        <p>We use state-of-the-art tools and
+                            hire professionals 
+                            with unique
+                            expertise worldwide.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio-anchor">
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
             <div class="container">
                 <h3>our portfolio</h3>
                 <div class="portfolio-examples">
@@ -78,7 +106,35 @@
                 </div>
             </div>
         </section>
-        <section class="our-team">
+        <section class="services" id="services-anchor">
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+            <div class="container">
+                <h3>services</h3>
+                <div class="services-cards">
+                    <div class="services-card">
+                        <h4 class="services-front green" id="frontend-anchor">frontend development</h4>
+                        <img class="frontend-img" src="images/Group 19.png" alt="">
+                        <p>The IT Unique frontend developers write <span class="green">clear</span> and <span class="green">robust code to create the visual part of a software solution.</span></p>
+                    </div>
+                    <div class="services-card">
+                        <h4 class="services-back yellow" id="backend-anchor">Backend Development</h4>
+                        <img class="backend-img" src="images/Group 29.png" alt="">
+                        <p>We think through every element of your backend, such as the <span class="yellow">server, logic, API, database, and other components,</span> to optimize the performance of your application and ensure the synergy between the frontend and backend parts.</p>
+                    </div>
+                    <div class="services-card">
+                        <h4 class="services-design blue" id="design-anchor">Design</h4>
+                        <img class="design-img" src="images/Group 12.png" alt="">
+                        <p>IT Unique creates intuitive UI/UX designs to largely <span class="blue">improve the way users interact with your product.</span></p>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section class="our-team" id="our-team-anchor">
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
             <div class="container">
                 <h3>our team</h3>
                 <div class="our-team-cards">
@@ -106,50 +162,128 @@
                 </div>
             </div>
         </section>
-        <section class="contact-us">
+        <section class="contact-us" id="contact-us-anchor">
             <div class="container">
-                <h3>contact us</h3>
-                <form action="">
-                    <div class="contact-us-form-inner-wrapper">
-                        <div class="contact-us-user-info">
-                            <div class="contact-us-name">
-                                <input type="text" placeholder="Name">
-                            </div>
-                            <div class="contact-us-surname">
-                                <input type="text" placeholder="Surname">
-                            </div>
-                            <div class="contact-us-gmail">
-                                <input type="text" placeholder="Gmail">
-                            </div>
-                        </div>
-                        <div class="contact-us-user-project">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="About your project"></textarea>
-                        </div>
+                <h3>Quick project start</h3>
+                <div class="contact-us-boxes">
+                    <div class="contact-us-box">
+                        <img src="images/Telephone.svg" alt="">
+                        <h5 class="contact-us-header">contact</h5>
+                        <p>Send us your project proposal or request for a project.</p>
                     </div>
-                </form>
-                <div class="contact-us-icons">
-                    <a href="#"><img src="images/logos_whatsapp-icon.svg" alt=""></a>
-                    <a href="#"><img src="images/logos_telegram.svg" alt=""></a>
-                    <a href="#"><img src="images/logos_google-gmail.svg" alt=""></a>
+                    <div class="contact-us-box">
+                        <img src="images/Boxes.svg" alt="">
+                        <h5 class="contact-us-header">Analysis</h5>
+                        <p>We'll be in touch with you to discuss the specifics of your project.</p>
+                    </div>
+                    <div class="contact-us-box">
+                        <img src="images/FileEarmarkText.svg" alt="">
+                        <h5 class="contact-us-header">Proposal</h5>
+                        <p>We will provide you either a customized proposal or our free, non-binding bid.</p>
+                    </div>
+                    <div class="contact-us-box">
+                        <img src="images/Group 26.svg" alt="">
+                        <h5 class="contact-us-header">team</h5>
+                        <p>A team will be put together and ready for your project by us.</p>
+                    </div>
+                    <div class="contact-us-box">
+                        <img src="images/Vector (1).svg" alt="">
+                        <h5 class="contact-us-header">Start</h5>
+                        <p>We'll introduce you to the team and get to work on the project. Send us your project proposal or request for a project.</p>
+                    </div>
                 </div>
-                <div class="contact-us-phone">
-                    <a href="#">+996(900) 999-999</a>
+                <button id="open-modal2">Contact us</button>
+                <div class="contact-us-icons">
+                    <a href="#">
+                        <img src="images/ic_baseline-whatsapp.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/ic_round-telegram.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/bxl_gmail.svg" alt="">
+                    </a>
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
+        <img class="footer-logo" src="images/IT-UNIQUE.png" alt="">
+        <div class="footer-line"></div>
         <div class="container">
-            <p class="footer-adress">Ахунбаев көчөсү №48<br>Бишкек, Кыргызстан</p>
-            <div class="footer-phone">
-                <a href="#">+996(900) 999-999</a>
-            </div>
-            <div class="footer-icons">
-                <a href="#"><img src="images/ic_baseline-whatsapp.svg" alt=""></a>
-                <a href="#"><img src="images/ic_round-telegram.svg" alt=""></a>
-                <a href="#"><img src="images/bxl_gmail.svg" alt=""></a>
+            <div class="footer-wrapper">
+                <div class="footer-boxes">
+                    <div class="footer-box">
+                        <h5>Address</h5>
+                        <a href="https://www.google.ru/maps/place/48+Akhunbayev+St,+Bishkek+720064/@42.8421719,74.6177476,17z/data=!3m1!4b1!4m5!3m4!1s0x389eb66a5de7161f:0x8060077e51f8b161!8m2!3d42.842168!4d74.6199363">Akhunbaeva, 48<br>
+                            Bishkek, Kyrgyzstan</a>
+                    </div>
+                    <div class="footer-box">
+                        <h5>Services</h5>
+                        <a href="#frontend-anchor">
+                            Frontend development
+                        </a>
+                        <a href="#backend-anchor">
+                            Backend development
+                        </a>
+                        <a href="#design-anchor">
+                            Design
+                        </a>
+                    </div>
+                    <div class="footer-box">
+                        <h5>Phone number</h5>
+                        <a class="footer-phone" href="tel:996900999999">+996(900) 999-999</a>
+                    </div>
+                    <div class="footer-box">
+                        <h5>Our team</h5>
+                        <p>
+                            IT developers<br>UI&UX designers
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-text-us">
+                        <h5>Text us</h5>
+                        <a href="mailto:it.unique@gmail.com">it.unique@gmail.com</a>
+                    </div>
+                    <div class="footer-icons">
+                        <a href=""><img src="images/ic_baseline-whatsapp (1).svg" alt=""></a>
+                        <a href=""><img src="images/ic_round-telegram (1).svg" alt=""></a>
+                        <a href=""><img src="images/bxl_gmail (1).svg" alt=""></a>
+                        <a href=""><img src="images/ic_baseline-facebook.svg" alt=""></a>
+                        <a href=""><img src="images/mdi_github.svg" alt=""></a>
+                        <a href=""><img src="images/ion_logo-behance.svg" alt=""></a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
+
+    <div class="contact-us-modal-wrapper">
+        <div class="contact-us-modal">
+            <form action="">
+                <div class="contact-us-form-inner-wrapper">
+                    <div class="contact-us-user-info">
+                        <div class="contact-us-name">
+                            <input type="text" placeholder="Name">
+                            </div>
+                        <div class="contact-us-surname">
+                            <input type="text" placeholder="Surname">
+                        </div>
+                        <div class="contact-us-gmail">
+                            <input type="text" placeholder="Gmail">
+                        </div>
+                    </div>
+                    <div class="contact-us-user-project">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="About your project"></textarea>
+                    </div>
+                </div>
+            </form>
+            <button>Send all</button>
+        </div>
+    </div>
+    <script src="js/modal.js"></script>
+    <script src="js/burger-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </body>
 </html>

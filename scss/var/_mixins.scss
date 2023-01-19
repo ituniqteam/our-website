@@ -18,7 +18,7 @@
 
 @mixin lm{
     @media screen and (max-width:700px) {
-        @content
+        @content;
     }
 }
 

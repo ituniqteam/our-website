@@ -2,7 +2,8 @@
 @use "../var/mixins" as *;
 
 .our-team{
-    padding: 53px 0 70px;
+    padding: 104px 0 70px;
+    background-color: $base;
 
     h3{
         font-weight: 700;
@@ -10,6 +11,7 @@
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 140px;
+        color: $yellow;
     }
 
     .our-team-cards{
@@ -33,6 +35,11 @@
                     font-weight: 600;
                     font-size: 18px;
                     margin-bottom: 15px;
+                    color: $white;
+                }
+
+                span{
+                    color: $white;
                 }
             }
         }

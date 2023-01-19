@@ -1,0 +1,72 @@
+@use "../var/colors" as *;
+@use "../var/mixins" as *;
+
+.contact-us-modal-wrapper{
+    display: none;
+    position: fixed;
+    background-color: $base;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.8);
+    left: 0;
+    top: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    .contact-us-modal{
+        background-color: $base;
+        padding: 50px;
+        width: 70%;
+        margin: 7% auto;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+
+        .contact-us-form-inner-wrapper{
+            display: flex;
+            justify-content: space-between;
+        
+            .contact-us-user-info div:not(:last-child){
+                margin-bottom: 44px;
+            }
+        
+            .contact-us-user-info{
+                input{
+                    background-color: transparent;
+                    color: $white;
+                    border: 1px solid $white;
+                    border-radius: 18px;
+                    font-size: 18px;
+                    padding: 16px 13px;
+                    width: 400px;
+                }
+            }
+        
+            .contact-us-user-project{
+                display: flex;
+        
+                textarea{
+                    height: 100%;
+                    width: 400px;
+                    background-color: transparent;
+                    border: 1px solid $white;
+                    border-radius: 18px;
+                    resize: none;
+                    padding: 16px 21px;
+                    color: $white;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        button{
+            color: $white;
+            font-weight: 500;
+            font-size: 20px;
+            background-color: $blue;
+            padding: 12px 43px;
+            border-radius: 18px;
+            margin: 40px auto 0;
+        }
+    }
+}
+
