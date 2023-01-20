@@ -15,7 +15,18 @@ jobs:
     steps:
       - uses: AutoModality/action-clean@v1   
       - uses: actions/checkout@v2
+      
+      - name: Stop container
+        run:  |
+          docker container stop demo-nginx
           
+      - name: Stop container
+        run:  |
+          docker container rm demo-nginx
+          
+      - name: Stop container
+        run:  |
+          docker rmi demo-nginx
           
       - name: Build an image
         run: |
