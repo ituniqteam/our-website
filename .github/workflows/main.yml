@@ -19,9 +19,9 @@ jobs:
           
       - name: Build an image
         run: |
-          docker build -t demo .
+          docker build -t demo-nginx .
       
       
       - name: Run the container
         run: |
-          docker run -d -p 80:80 --name demo demo
+          docker run -d -p 80:80 --name demo-nginx demo-nginx
