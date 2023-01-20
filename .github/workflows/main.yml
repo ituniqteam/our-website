@@ -1,0 +1,27 @@
+name: build-time-project
+
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+          
+      - uses: actions/checkout@v2
+          
+          
+      - name: Build an image
+        run: |
+          docker build -t demo .
+      
+      
+      - name: Run the container
+        run: |
+          docker run -d -p 80:80 --name demo demo
