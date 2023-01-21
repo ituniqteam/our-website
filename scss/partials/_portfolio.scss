@@ -12,12 +12,46 @@
         font-size: 52px;
         text-align: center;
         margin-bottom: 100px;
+
+        @include md{
+            font-size: 40px;
+            margin-bottom: 70px;
+        }
+
+        @include sm{
+            font-size: 26px;
+        }
+
+        @include xsm{
+            margin-bottom: 30px;
+        }
     }
 
     .portfolio-examples{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 104px;
+        overflow: hidden;
+        position: relative;
+
+        .swiper-button-prev::after,
+        .swiper-button-next::after{
+            color: $white;
+            font-size: 50px;
+            bottom: 50px;
+
+            @include md{
+                font-size: 30px;
+            }
+
+            @include lm{
+                font-size: 24px;
+            }
+
+            @include xsm{
+                font-size: 17px;
+            }
+        }
+
+        img{
+            width: 100%;
+        }
     }
 }

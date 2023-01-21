@@ -11,12 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!--  -->
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 </head>
 <body>
     <main class="main">
         <div class="hero-block-wrapper">
             <div class="background">
                 <header class="header">
+                    <div id='stars'></div>
+                    <div id='stars2'></div>
+                    <div id='stars3'></div>
                     <div class="container">
                         <div class="header-row">
                             <div class="header-logo">
@@ -90,23 +94,30 @@
             </div>
         </section>
         <section class="portfolio" id="portfolio-anchor">
-            <div id='stars'></div>
-            <div id='stars2'></div>
-            <div id='stars3'></div>
             <div class="container">
                 <h3>our portfolio</h3>
-                <div class="portfolio-examples">
-                    <a href="#"><img src="images/Rectangle 3.png" alt=""></a>
-                    <a href="#"><img src="images/Rectangle 4.png" alt=""></a>
-                    <a href="#"><img src="images/Rectangle 5.png" alt=""></a>
-                    <a href="#"><img src="images/Rectangle 6 (1).png" alt=""></a>
+                
+                <div class="swiper-container portfolio-examples">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/Rectangle 3.png" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/Rectangle 4.png" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/Rectangle 5.png" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/Rectangle 6 (1).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </section>
         <section class="services" id="services-anchor">
-            <div id='stars'></div>
-            <div id='stars2'></div>
-            <div id='stars3'></div>
             <div class="container">
                 <h3>services</h3>
                 <div class="services-cards">
@@ -129,33 +140,12 @@
             </div>
         </section>
         <section class="our-team" id="our-team-anchor">
-            <div id='stars'></div>
-            <div id='stars2'></div>
-            <div id='stars3'></div>
             <div class="container">
                 <h3>our team</h3>
-                <div class="our-team-cards">
-                    <div class="our-team-card">
-                        <img src="images/IMG_2446.jpg" alt="">
-                        <div class="our-team-info">
-                            <p>Alibek Ulanbek uulu</p>
-                            <span>Frontend Developer</span>
-                        </div>
-                    </div>
-                    <div class="our-team-card">
-                        <img src="images/IMG_2446.jpg" alt="">
-                        <div class="our-team-info">
-                            <p>Alibek Ulanbek uulu</p>
-                            <span>Frontend Developer</span>
-                        </div>
-                    </div>
-                    <div class="our-team-card">
-                        <img src="images/IMG_2446.jpg" alt="">
-                        <div class="our-team-info">
-                            <p>Alibek Ulanbek uulu</p>
-                            <span>Frontend Developer</span>
-                        </div>
-                    </div>
+                <div class="swiper-container our-team-slider">
+                    <div class="swiper-wrapper our-team-wrapper"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </section>
@@ -280,6 +270,9 @@
             </form>
         </div>
     </div>
+    <script type="module" src="js/workers-show.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/burger-menu.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>

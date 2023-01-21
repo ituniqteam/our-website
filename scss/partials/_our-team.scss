@@ -5,6 +5,14 @@
     padding: 104px 0 70px;
     background-color: $base;
 
+    @include md{
+        padding: 60px 0 30px;
+    }
+
+    @include xsm{
+        padding: 30px 0 15px;
+    }
+
     h3{
         font-weight: 700;
         font-size: 52px;
@@ -12,34 +20,129 @@
         text-align: center;
         margin-bottom: 140px;
         color: $yellow;
+
+        @include md{
+            font-size: 40px;
+            margin-bottom: 70px;
+        }
+
+        @include sm{
+            font-size: 26px;
+        }
+
+        @include xsm{
+            margin-bottom: 30px;
+        }
     }
 
-    .our-team-cards{
-        display: flex;
-        justify-content: space-between;
+    .our-team-slider{
+        padding: 0 20px;
+    }
 
-        .our-team-card{
-            width: 230px;
+    .swiper-container{
+        overflow: hidden;
+        position: relative;
 
-            img{
-                width: 230px;
-                height: 230px;
-                border-radius: 50%;
-                margin-bottom: 25px;
+        .swiper-button-prev::after,
+        .swiper-button-next::after{
+            color: $white;
+            font-size: 50px;
+            bottom: 50px;
+
+            @include md{
+                font-size: 30px;
             }
 
-            .our-team-info{
-                text-align: center;
+            @include lm{
+                font-size: 24px;
+            }
 
-                p{
-                    font-weight: 600;
-                    font-size: 18px;
-                    margin-bottom: 15px;
-                    color: $white;
+            @include xsm{
+                font-size: 17px;
+            }
+        }
+
+        .swiper-wrapper{
+
+            .our-team-box{
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+            }
+
+            .swiper-slide{
+
+                img{
+                    width: 230px;
+                    height: 230px;
+                    border-radius: 50%;
+                    margin: 0 auto 25px;
+
+                    @include lg{
+                        width: 190px;
+                        height: 190px;
+                    }
+
+                    @include md{
+                        width: 150px;
+                        height: 150px;
+                    }
+
+                    @include lm{
+                        width: 120px;
+                        height: 120px;
+                    }
+
+                    @include sm{
+                        width: 100px;
+                        height: 100px;
+                    }
+
+                    @include xsm{
+                        width: 70px;
+                        height: 70px;
+                        margin: 0 auto 10px;
+                    }
                 }
+    
+                .our-team-info{
+                    text-align: center;
+    
+                    p{
+                        font-weight: 600;
+                        font-size: 18px;
+                        margin-bottom: 15px;
+                        color: $white;
 
-                span{
-                    color: $white;
+                        @include md{
+                            font-size: 14px;
+                        }
+
+                        @include sm{
+                            font-size: 11px;
+                        }
+
+                        @include xsm{
+                            font-size: 9px;
+                            margin-bottom: 3px;
+                        }
+                    }
+    
+                    span{
+                        color: $white;
+
+                        @include md{
+                            font-size: 13px;
+                        }
+
+                        @include sm{
+                            font-size: 11px;
+                        }
+
+                        @include xsm{
+                            font-size: 9px;
+                        }
+                    }
                 }
             }
         }

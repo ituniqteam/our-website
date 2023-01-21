@@ -13,21 +13,56 @@
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 73px;
+
+        @include md{
+            font-size: 40px;
+            margin-bottom: 70px;
+        }
+
+        @include sm{
+            font-size: 26px;
+        }
+
+        @include xsm{
+            margin-bottom: 30px;
+        }
     }
 
     .contact-us-boxes{
         display: flex;
+        flex-wrap: wrap;
         text-align: center;
         margin-bottom: 105px;
+        justify-content: center;
+
+        @include md{
+            margin-bottom: 50px;
+        }
+
+        @include xsm{
+            margin-bottom: 25px;
+        }
 
         .contact-us-box{
             width: 20%;
             padding: 10px;
 
+            @include md{
+                width: 33%;
+            }
+
             img{
                 margin-bottom: 15px;
                 height: 50px;
                 width: auto;
+
+                @include md{
+                    height: 40px;
+                }
+
+                @include sm{
+                    height: 30px;
+                }
             }
 
             h5{
@@ -36,11 +71,35 @@
                 font-weight: 700;
                 font-size: 24px;
                 margin-bottom: 5px;
+
+                @include md{
+                    font-size: 18px;
+                }
+
+                @include sm{
+                    font-size: 15px;
+                }
+
+                @include xsm{
+                    font-size: 12px;
+                }
             }
     
             p{
                 font-weight: 500;
                 font-size: 15px;
+
+                @include md{
+                    font-size: 12px;
+                }
+
+                @include md{
+                    font-size: 10px;
+                }
+
+                @include xsm{
+                    font-size: 8px;
+                }
             }
         }
     }
@@ -54,6 +113,22 @@
         border-radius: 20px;
         display: flex;
         margin: 0 auto 102px;
+        
+        @include md{
+            font-size: 18px;
+            margin: 0 auto 50px;
+            padding: 6px 41px;
+        }
+
+        @include sm{
+            font-size: 15px;
+        }
+
+        @include xsm{
+            font-size: 12px;
+            padding: 5px 25px;
+            margin: 0 auto 25px;
+        }
     }
 
     button:hover{
@@ -68,10 +143,24 @@
         img{
             width: 46px;
             height: 46px;
+
+            @include md{
+                width: 35px;
+                height: 35px;
+            }
+
+            @include xsm{
+                width: 20px;
+                height: 20px;
+            }
         }
 
         a:not(:last-child){ 
             margin-right: 25px;
+
+            @include xsm{
+                margin-right: 10px;
+            }
         }
     }
 }
