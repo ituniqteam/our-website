@@ -10,16 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!--  -->
-    <!-- JQuery -->
-    <script
-    src="https://code.jquery.com/jquery-3.6.3.js"
-    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-    crossorigin="anonymous">
-    </script>
-    <script src="js/jquery.maskedinput.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/script.js"></script>
-    <!--  -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -267,8 +257,9 @@
     </footer>
 
     <div class="contact-us-modal-wrapper">
+        <div class="request-has-been-sent">Your request has been sent</div>
         <div class="contact-us-modal">
-            <form action="sender.php" method="POST">
+            <form action="mail.php" method="POST">
                 <div class="contact-us-form-inner-wrapper">
                     <div class="contact-us-user-info">
                         <div class="contact-us-name">
