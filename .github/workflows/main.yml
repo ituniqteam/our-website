@@ -1,0 +1,40 @@
+name: build-time-project
+
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+    
+      - uses: AutoModality/action-clean@v1   
+      
+      - uses: actions/checkout@v2
+      
+      - name: Stop container
+        run:  |
+          docker container stop demo-nginx
+          
+      - name: Remove container
+        run:  |
+          docker container rm demo-nginx
+          
+      - name: Remove an image
+        run:  |
+          docker rmi demo-nginx
+          
+      - name: Build an image
+        run: |
+          docker build -t demo-nginx .
+      
+      
+      - name: Run the container
+        run: |
+          docker run -d -p 80:80 --name demo-nginx demo-nginx
