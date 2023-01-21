@@ -21,15 +21,29 @@
         display: flex;
         flex-direction: column;
 
+        @include lm{
+            padding: 25px;
+        }
+
         .contact-us-form-inner-wrapper{
             display: flex;
             justify-content: space-between;
         
             .contact-us-user-info div:not(:last-child){
                 margin-bottom: 44px;
+
+                @include md{
+                    margin-bottom: 22px;
+                }
+
+                // @include lm{
+                //     margin-bottom: 39px;
+                // }
             }
         
             .contact-us-user-info{
+                width: 50%;
+
                 input{
                     background-color: transparent;
                     color: $white;
@@ -37,16 +51,24 @@
                     border-radius: 18px;
                     font-size: 18px;
                     padding: 16px 13px;
-                    width: 400px;
+                    width: 80%;
+
+                    @include md{
+                        font-size: 14px;
+                    }
+
+                    @include lm{
+                        padding: 8px 6px;
+                        font-size: 11px;
+                    }
                 }
             }
         
             .contact-us-user-project{
                 display: flex;
+                width: 50%;
         
                 textarea{
-                    height: 100%;
-                    width: 400px;
                     background-color: transparent;
                     border: 1px solid $white;
                     border-radius: 18px;
@@ -54,6 +76,19 @@
                     padding: 16px 21px;
                     color: $white;
                     font-size: 18px;
+                    width: 100%;
+
+                    @include md{
+                        font-size: 14px;
+                    }
+
+                    @include lm{
+                        font-size: 11px;
+                    }
+
+                    @include sm{
+                        padding: 8px 10px;
+                    }
                 }
             }
         }
@@ -67,6 +102,15 @@
             padding: 12px 43px;
             border-radius: 18px;
             margin: 40px auto 0;
+
+            @include md{
+                font-size: 15px;
+            }
+
+            @include lm{
+                margin: 20px auto 0;
+                font-size: 12px;
+            }
         }
     }
 }

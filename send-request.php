@@ -1,26 +1,23 @@
 <?php
-$name = $_POST['name'];
-$surname = $_POST['surname'];
-$gmail = $_POST['gmail'];
-$project = $_POST['post'];
+    $name = $_POST['name'];
+    $surname = $_POST['surname'];
+    $gmail = $_POST['gmail'];
+    $text = $_POST['text'];
 
-$name = htmlspecialchars($name);
-$surname = htmlspecialchars($surname);
-$gmail = htmlspecialchars($gmail);
-$project = htmlspecialchars($project);
-$name = urldecode($name);
-$surname = urldecode($surname);
-$gmail = urldecode($gmail);
-$project = urldecode($project);
-$name = trim($name);
-$surname = trim($surname);
-$gmail = trim($gmail);
-$project = trim($project)
-//echo $name;
-//echo "<br>";
-//echo $gmail;
-if (mail("alibek.fras@gmail.com", "Заявка с сайта", "ФИО:".$name." ".$surname.". E-mail: ".$gmail ,"Project info: \r\n".$project))
- {     echo "сообщение успешно отправлено";
-} else {
-    echo "при отправке сообщения возникли ошибки";
-}?>
+	$to = "alibek.fras@gmail.com"; 
+	$date = date ("d.m.Y"); 
+	$time = date ("h:i");
+	$from = $gmail;
+	$subject = "Заявка c сайта";
+
+	
+	$msg="
+    Имя: $name /n
+    Фамилия: $surname /n
+    Почта: $gmail /n
+    Текст: $text"; 	
+	mail($to, $subject, $msg, "From: $from ");
+
+?>
+
+<p>Привет, форма отправлена</p>
