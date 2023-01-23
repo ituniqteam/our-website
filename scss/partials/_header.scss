@@ -66,21 +66,21 @@
                     transition: all 0.5s;
 
                     @include lm{
-                        height: 2px;
+                        height: 1px;
                     }
                 }
                 .menu-btn span:nth-of-type(2) {
                     top: calc(50% - 9px);
 
                     @include lm{
-                        top: calc(50% - 4px);
+                        top: calc(50% - 6px);
                     }
                 }
                 .menu-btn span:nth-of-type(3) {
                     top: calc(50% + 9px);
 
                     @include lm{
-                        top: calc(50% + 4px);
+                        top: calc(50% + 6px);
                     }
                 }
 

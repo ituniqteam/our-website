@@ -13,7 +13,7 @@ new Swiper('.portfolio-examples', {
         prevEl: '.swiper-button-prev',
     },
 
-    slidesPerView: 1.2,
+    slidesPerView: 2,
 
     spaceBetween: 40,
 })
