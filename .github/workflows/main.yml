@@ -37,4 +37,4 @@ jobs:
       
       - name: Run the container
         run: |
-          docker run -d -p 8080:80 --name demo-nginx demo-nginx
+          docker run -d -p 8010:80 --name demo-nginx demo-nginx
