@@ -11,7 +11,7 @@ on:
 jobs:
   build:
     runs-on: self-hosted
-
+  
     steps:
     
       - uses: AutoModality/action-clean@v1   
@@ -37,4 +37,4 @@ jobs:
       
       - name: Run the container
         run: |
-          docker run -d -p 80:80 --name demo-nginx demo-nginx
+          docker run -d -p 8080:80 --name demo-nginx demo-nginx
