@@ -249,7 +249,7 @@
     <div class="contact-us-modal-wrapper">
         <div class="request-has-been-sent">Your request has been sent</div>
         <div class="contact-us-modal">
-            <form action="mail.php" method="POST">
+            <form id="request-form">
                 <div class="contact-us-form-inner-wrapper">
                     <div class="contact-us-user-info">
                         <div class="contact-us-name">
@@ -259,18 +259,19 @@
                             <input type="text" name="surname" placeholder="Surname">
                         </div>
                         <div class="contact-us-gmail">
-                            <input type="email" name="email" placeholder="Gmail" required>
+                            <input type="email" name="email" placeholder="Email" required>
                         </div>
                     </div>
                     <div class="contact-us-user-project">
                         <textarea name="message" id="" cols="30" rows="10" placeholder="About your project" required></textarea>
                     </div>
-                    <input type="hidden" name="act" value="order">
                 </div>
                 <button class="send-form" type="submit">Send all</button>
             </form>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/request.js"></script>
     <script type="module" src="js/workers-show.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
