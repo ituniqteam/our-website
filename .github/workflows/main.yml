@@ -28,7 +28,7 @@ jobs:
           
       - name: Run the container
         run: |     
-          git update-index --chmod=+x /home/ubuntu/front/actions-runner/_work/our-website/our-website/init-letsencrypt.sh  
+          git update-index --chmod=+x init-letsencrypt.sh  
           
       - name: Run the container
         run: |
