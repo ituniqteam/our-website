@@ -18,17 +18,17 @@ jobs:
       
       - uses: actions/checkout@v2
       
-      - name: Stop container
-        run:  |
-          docker container stop demo-nginx
+#       - name: Stop container
+#         run:  |
+#           docker container stop demo-nginx
           
-      - name: Remove container
-        run:  |
-          docker container rm demo-nginx
+#       - name: Remove container
+#         run:  |
+#           docker container rm demo-nginx
           
-      - name: Remove an image
-        run:  |
-          docker rmi demo-nginx
+#       - name: Remove an image
+#         run:  |
+#           docker rmi demo-nginx
           
       - name: Build an image
         run: |
