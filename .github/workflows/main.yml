@@ -20,21 +20,13 @@ jobs:
       
       - name: Stop container
         run:  |
-          docker container stop demo-nginx
+          docker container stop our-website_nginx_1
           
       - name: Remove container
         run:  |
-          docker container rm demo-nginx
-          
-      - name: Remove an image
-        run:  |
-          docker rmi demo-nginx
-          
-      - name: Build an image
-        run: |
-          docker build -t demo-nginx .
+          docker container stop our-website_nginx_1
       
       
       - name: Run the container
         run: |
-          docker run -d -p 80:80 --name demo-nginx demo-nginx
+          docker-compose up -d
