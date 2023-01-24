@@ -5,6 +5,7 @@ new Swiper('.our-team-slider', {
     },
 
     slidesPerView: 3,
+    spaceBetween: 10
 });
 
 new Swiper('.portfolio-examples', {

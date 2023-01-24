@@ -73,6 +73,10 @@
                         padding: 8px 6px;
                         font-size: 11px;
                     }
+
+                    @include sm{
+                        font-size: 7px;
+                    }
                 }
             }
         
@@ -100,6 +104,7 @@
 
                     @include sm{
                         padding: 8px 10px;
+                        font-size: 7px;
                     }
                 }
             }
@@ -122,6 +127,11 @@
             @include lm{
                 margin: 20px auto 0;
                 font-size: 12px;
+            }
+
+            @include sm{
+                font-size: 8px;
+                padding: 7px 20px;
             }
         }
     }
