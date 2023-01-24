@@ -1,2 +1,4 @@
-Dockerfile
+docker-compose.yml
+data/*
+init-letsencrypt.sh
 
