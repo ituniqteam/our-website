@@ -28,7 +28,7 @@ jobs:
           
       - name: Give permissions
         run:  |         
-          chmod +x "${GITHUB_WORKSPACE}/.github/init-letsencrypt.sh "
+          chmod +x "${GITHUB_WORKSPACE}/init-letsencrypt.sh "
           
       - name: Run the container
         run: |
