@@ -26,9 +26,13 @@ jobs:
         run:  |
           docker container stop our-website_nginx_1
           
+      - name: Give permissions
+        run:  |         
+          chmod +x "${GITHUB_WORKSPACE}/.github/init-letsencrypt.sh "
+          
       - name: Run the container
         run: |
-          sh ./init-letsencrypt.sh    
+          ./init-letsencrypt.sh    
       
       - name: Run the container
         run: |
