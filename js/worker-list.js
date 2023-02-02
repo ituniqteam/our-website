@@ -5,6 +5,11 @@ export const workerList = [
         workersImage: "images/staff/aibek.jpg"
     },
     {
+        workersFullname: "Aitegin Muratov",
+        workersJob: "Project Manager",
+        workersImage: "images/staff/aitegin.jpg"
+    },
+    {
         workersFullname: "Alibek Ulanbek uulu",
         workersJob: "Frontend Developer",
         workersImage: "images/staff/alibek.PNG"
@@ -12,12 +17,7 @@ export const workerList = [
     {
         workersFullname: "Dariga Dzhusambaeva",
         workersJob: "UI/UX Designer",
-        workersImage: "images/staff/alibek.PNG"
-    },
-    {
-        workersFullname: "Aitegin Muratov",
-        workersJob: "Project Manager",
-        workersImage: "images/staff/alibek.PNG"
+        workersImage: "images/staff/Dariga.jpg"
     },
     {
         workersFullname: "Usman Omuraliev",
@@ -27,7 +27,7 @@ export const workerList = [
     {
         workersFullname: "Benazir Akmatova",
         workersJob: "UI/UX Designer",
-        workersImage: "images/staff/alibek.PNG"
+        workersImage: "images/staff/benazir.jpg"
     },
     {
         workersFullname: "Baiel Abdyllaev",
@@ -37,6 +37,6 @@ export const workerList = [
     {
         workersFullname: "Ainazik Samat kyzy",
         workersJob: "DevOps Engineer",
-        workersImage: "images/staff/alibek.PNG"
+        workersImage: "images/staff/ainazik.png"
     }
 ];
