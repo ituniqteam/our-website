@@ -24,11 +24,7 @@ jobs:
           
       - name: Remove container
         run:  |
-          docker container stop our-website_nginx_1
-          
-      - name: Run the container
-        run: |
-          sh ./init-letsencrypt.sh    
+          docker container stop our-website_nginx_1   
       
       - name: Run the container
         run: |
