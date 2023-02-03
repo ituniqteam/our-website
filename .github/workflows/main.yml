@@ -13,19 +13,5 @@ jobs:
     runs-on: self-hosted
   
     steps:
-    
-      - uses: AutoModality/action-clean@v1   
-      
-      - uses: actions/checkout@v2
-      
-      - name: Stop container
-        run:  |
-          docker container stop our-website_nginx_1
-          
-      - name: Remove container
-        run:  |
-          docker container stop our-website_nginx_1   
-      
-      - name: Run the container
-        run: |
-          docker-compose up -d
+
+
