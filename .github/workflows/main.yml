@@ -15,3 +15,7 @@ jobs:
     steps:
       - uses: AutoModality/action-clean@v1   
       - uses: actions/checkout@v2
+      
+      - name: Restart Nginx
+        run: |
+          sudo systemctl restart nginx
