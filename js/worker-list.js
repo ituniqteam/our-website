@@ -27,7 +27,7 @@ export const workerList = [
     {
         workersFullname: "Benazir Akmatova",
         workersJob: "UI/UX Designer",
-        workersImage: "images/staff/benazir.jpg"
+        workersImage: "images/staff/benazir.JPG"
     },
     {
         workersFullname: "Baiel Abdyllaev",
