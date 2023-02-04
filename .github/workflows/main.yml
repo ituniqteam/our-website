@@ -18,4 +18,4 @@ jobs:
       
       - name: Restart Nginx
         run: |
-          sudo systemctl restart nginx
+           sudo /usr/bin/systemctl restart nginx
