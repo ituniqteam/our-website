@@ -17,4 +17,4 @@ new Swiper('.portfolio-examples', {
     slidesPerView: 2,
 
     spaceBetween: 40,
-})
+});
