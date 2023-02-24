@@ -1,7 +1,8 @@
 const contactModal = document.querySelector(".contact-us-modal-wrapper");
 const openModalBtn1 = document.querySelector("#open-modal1");
 const openModalBtn2 = document.querySelector("#open-modal2");
-const sendFormBtn = document.querySelector('.send-form')
+const sendFormBtn = document.querySelector('.send-form');
+const modalCloseImg = document.querySelector('.modal-close');
 const requestHasBeenSent = document.querySelector('.request-has-been-sent');
 
 openModalBtn1.addEventListener('click', () => {
@@ -17,6 +18,10 @@ window.onclick = (e) => {
         contactModal.style.display = "none";
     }
 }
+
+modalCloseImg.addEventListener('click', () => {
+    contactModal.style.display = "none";
+})
 
 sendFormBtn.addEventListener('click', () => {
     requestHasBeenSent.style.transform = "translateX(0)"

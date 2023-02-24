@@ -26,15 +26,16 @@
     }
     .contact-us-modal{
         background-color: $base;
-        padding: 50px;
+        padding: 65px 50px 50px;
         width: 70%;
         margin: 8% auto;
         border-radius: 30px;
         display: flex;
         flex-direction: column;
+        position: relative;
 
         @include lm{
-            padding: 25px;
+            padding: 40px 25px 25px;
         }
 
         .contact-us-form-inner-wrapper{
@@ -132,6 +133,35 @@
             @include sm{
                 font-size: 8px;
                 padding: 7px 20px;
+            }
+        }
+
+        .modal-close{
+            background: none;
+            position: absolute;
+            top: -30px;
+            right: 5px;
+
+            @include lm{
+                top: -20px;
+                right: -12px;
+            }
+
+            @include sm{
+                top: -12px;
+                right: 7px;
+            }
+            
+            img{
+                @include lm{
+                    width: 20px;
+                    height: 20px;
+                }
+
+                @include sm{
+                    width: 14px;
+                    height: 14px;
+                }
             }
         }
     }
