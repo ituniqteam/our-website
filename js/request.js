@@ -1,5 +1,5 @@
-const TOKEN = "5683799434:AAEx-VK5IQ8rylrk7Jjzu6Jle-oDzxG1vjE";
-const CHAT_ID = "-1001868078293";
+import { CHAT_ID, TOKEN } from "./.secret/token.js";
+
 const URL_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
 
 document.getElementById('request-form').addEventListener('submit', function(e) {
