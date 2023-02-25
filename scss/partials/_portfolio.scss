@@ -39,6 +39,10 @@
         overflow: hidden;
         position: relative;
 
+        .portfolio-slide{
+            padding: 0 55px;
+        }
+
         .swiper-button-prev::after,
         .swiper-button-next::after{
             color: $white;

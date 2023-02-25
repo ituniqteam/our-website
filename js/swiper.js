@@ -14,7 +14,11 @@ new Swiper('.portfolio-examples', {
         prevEl: '.swiper-button-prev',
     },
 
-    slidesPerView: 2,
+    slidesPerView: 1,
 
-    spaceBetween: 40,
+    breakpoints: {
+        840: {
+            slidesPerView: 2
+        }
+    }
 });

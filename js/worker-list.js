@@ -2,7 +2,7 @@ export const workerList = [
     {
         workersFullname: "Aibek Muratov",
         workersJob: "General Director",
-        workersImage: "images/staff/aibek.jpg"
+        workersImage: "images/staff/aibek-vice.jpg"
     },
     {
         workersFullname: "Aitegin Muratov",
@@ -33,6 +33,11 @@ export const workerList = [
         workersFullname: "Baiel Abdyllaev",
         workersJob: "Backend Developer",
         workersImage: "images/staff/baiel.jpg"
+    },
+    {
+        workersFullname: "Aibek Nuradilov",
+        workersJob: "Mobile Developer",
+        workersImage: "images/staff/aibek.jpg"
     },
     {
         workersFullname: "Ainazik Samat kyzy",
