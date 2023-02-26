@@ -51,8 +51,9 @@
                     width: 30px;
                     height: 30px;
                     position: relative;
-                    z-index:2;
+                    z-index: 1000;
                     overflow: hidden;
+
                 }
 
                 .menu-btn span {
@@ -89,6 +90,11 @@
                     margin-left: auto;
                 }
 
+                .menu-btn.active{
+                    position: fixed;
+                    right: 20px;
+                }
+
                 @include md{
                     .menu-btn{
                         display: block;
@@ -104,6 +110,7 @@
                         background: $base;
                         transform: translateX(-500%);
                         transition: transform 0.5s; 
+                        z-index: 999;
                     }
                     .menu.active {
                         transform: translateX(0);
