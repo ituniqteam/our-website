@@ -11,6 +11,7 @@ on:
 jobs:
   build:
     runs-on: self-hosted
+    
   
     steps:
       - uses: AutoModality/action-clean@v1   
