@@ -15,19 +15,9 @@ export const workerList = [
         workersImage: "images/staff/alibek.PNG"
     },
     {
-        workersFullname: "Dariga Dzhusambaeva",
-        workersJob: "UI/UX Designer",
-        workersImage: "images/staff/Dariga.jpg"
-    },
-    {
         workersFullname: "Usman Omuraliev",
         workersJob: "Mobile Developer",
         workersImage: "images/staff/usman.jpg"
-    },
-    {
-        workersFullname: "Benazir Akmatova",
-        workersJob: "UI/UX Designer",
-        workersImage: "images/staff/benazir.JPG"
     },
     {
         workersFullname: "Baiel Abdyllaev",
@@ -40,8 +30,8 @@ export const workerList = [
         workersImage: "images/staff/aibek.jpg"
     },
     {
-        workersFullname: "Ainazik Samat kyzy",
-        workersJob: "DevOps Engineer",
-        workersImage: "images/staff/ainazik.png"
-    }
+        workersFullname: "Arina Kim",
+        workersJob: "UX/UI Designer",
+        workersImage: "images/staff/arina.jpg"
+    },
 ];

@@ -4,8 +4,14 @@ new Swiper('.our-team-slider', {
         prevEl: '.swiper-button-prev',
     },
 
-    slidesPerView: 3,
-    spaceBetween: 10
+    slidesPerView: 2,
+    spaceBetween: 10,
+
+    breakpoints: {
+        480: {
+            slidesPerView: 3
+        }
+    }
 });
 
 new Swiper('.portfolio-examples', {
